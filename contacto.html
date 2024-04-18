@@ -1,40 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-        <head>
-            <meta charset="UTF-8">
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <title>Contacto</title>
-        </head>
-        <body>
-            <header>
 
-                <h1>Contacto</h1>
-            </header>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="icon/icon.jpg" type="image/icon">
+    <link rel="stylesheet" href="estilos/contacto.css">
+    <title>Contacto</title>
+</head>
 
-            <fieldset>
-                <legend>Datos Personales</legend>
-                <br>
+<body>
+    <header>
 
-                <form>
-                    <label for="IngNombre"> Ingrese su nombre: </label>
-                    <input type="text" name="IngNombre" placeholder="nombre" ><br><br>
-                    <label for="IngApellido"> Ingrese su Apellido: </label>
-                    <input type="text" name="IngApellido" placeholder="Apellido" ><br><br> 
-                    <label for="correo"> Ingrese su E-mail: </label>
-                    <input type="mail" name="correo" placeholder="correo@hhhh.com" ><br><br>
-                    <label for="date">Ingrese fecha de nacimiento:</label>
-                    <input type="date" id="date" name="date"><br><br>
-                    <label for="text">Ingrese el mensaje a Enviar:</label>
-                    <textarea type="text" name="texto" placeholder="de 0 a 250 caracteres"><br><br>
-                
-                </form>
-            </fieldset>
+        <h1>Contacto</h1>
+    </header>
+    <fieldset class="container">
+        <p><leyend> Datos Personales</legend></p>
+        <br>
+        <form action="https://formsubmit.co/fabiescu2404@gmail.com" method="POST">
+            <label for="nombre">
+                <h4>Nombre:</h4>
+            </label>
+            <input type="text" id="nombre" required /><br /><br />
 
-            <button type="submit">Enviar</button><br><br>
-            
-            <footer>
-                <p class="copyright">&copy Copyright Grupo 3 -  2024</p>
-            </footer>
-        </body>
+            <label for="apellido">
+                <h4>Apellido:</h4>
+            </label>
+            <input type="text" id="apellido" required /><br /><br />
+
+            <label for="fecha-nacimiento">
+                <h4>Fecha de nacimiento:</h4>
+            </label>
+            <input type="text" id="dni" required /><br /><br />
+
+            <label for="email">
+                <h4>Email:</h4>
+            </label>
+            <input type="email" id="email" required /><br /><br />
+
+            <label for="text"><h4>Ingrese el mensaje a Enviar:</h4></label>
+            <textarea name="detalle-mensaje" id="" mensaje" cols="40" rows="10" placeholder="Indicanos tu pedido...">
+                    </textarea><br><br>
+            <input type="submit" value="Enviar">
+        </form>
+
+    </fieldset>
+    <footer>
+        <p class="copyright">&copy Copyright Grupo 4 - 2024</p>
+    </footer>
+</body>
 
 </html>
