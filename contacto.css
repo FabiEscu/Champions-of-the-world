@@ -48,7 +48,16 @@ input {
   box-sizing: border-box;
 }
 
-/* Estilos para pantallas de celulares */
+footer{
+  background-color: darkslategrey;
+}
+
+.copyright{
+  text-align: center;
+  align-items: center;
+}
+
+/*pantallas de celulares */
 @media only screen and (max-width: 767px) {
   .container {
     max-width: 100%;
