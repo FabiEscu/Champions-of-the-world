@@ -1,58 +1,78 @@
 body {
-    font-family: "Arial", sans-serif;
-    background-image: url(https://i.pinimg.com/564x/56/a0/55/56a055919d7e027cbf9462ab882326eb.jpg);
-    background-repeat: no-repeat;
-    background-size:cover;
-    margin: 0;
-    padding: 0;
+  font-family: "Arial", sans-serif;
+  background-image: url(https://i.pinimg.com/564x/56/a0/55/56a055919d7e027cbf9462ab882326eb.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+  background-image: url(https://i.pinimg.com/564x/8d/41/70/8d4170a98f8c50f306d2c2d35e9293fb.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+h1 {
+  color: black;
+  text-align: center;
+}
+
+p {
+  color: white !important;
+  text-align: center;
+  font-size: large;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+label {
+  margin-bottom: 20px;
+  color: black;
+  font-size: large;
+}
+
+input {
+  padding: 8px;
+  margin-bottom: 15px;
+  width: 70%;
+  box-sizing: border-box;
+}
+
+/*pantallas de celulares */
+@media only screen and (max-width: 767px) {
+  .container {
+    max-width: 100%;
+    padding: 10px;
   }
-  
+}
+
+/* Estilos para tablets */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .container {
+    max-width: 600px;
+  }
+}
+
+/* Estilos para notebooks */
+@media only screen and (min-width: 1024px) and (max-width: 1439px) {
   .container {
     max-width: 800px;
-    margin:  auto;
-    padding: 20px;
-    background-image: url(https://i.pinimg.com/564x/8d/41/70/8d4170a98f8c50f306d2c2d35e9293fb.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
   }
-  
-  h1 {
-    color: black;
-    text-align: center;
-  }
-  
-  p {
-    color: white !important;
-    text-align: center;
-    font-size: large;
-  }
-  
-  form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  label {
-    margin-bottom: 20px;
-    color:black;
-    font-size: large;
-  }
+}
 
-  .labelBlurStyle{
-    color: white;
-    text-shadow : 0px 0px 30px black;
+/* Estilos para monitores de PC */
+@media only screen and (min-width: 1440px) {
+  .container {
+    max-width: 1000px;
   }
-  
-  input {
-    padding: 8px;
-    margin-bottom: 15px;
-    width: 70%;
-    box-sizing: border-box;
-    backdrop-filter: blur(10px);
-    background-color: rgba(255,255,255,.5);
-  }
-  
-  
+}
