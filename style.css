@@ -43,7 +43,7 @@ nav ul li {
 nav ul li a {
   color: var(--color-amarillo);
   text-decoration: none;
-  size: 1rem;
+  size: 2rem;
 }
 
 main {
