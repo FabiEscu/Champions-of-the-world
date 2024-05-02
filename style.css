@@ -13,10 +13,9 @@ li {
 
 :root {
   --color-azul: #93c6f5;
-  --color-blanco: #ffffff; 
-  --color-amarillo: #f4d941; 
+  --color-blanco: #ffffff;
+  --color-amarillo: #f4d941;
 }
-
 
 body {
   font-family: Arial, sans-serif;
@@ -35,7 +34,6 @@ nav ul {
   justify-content: center;
   list-style: none;
 }
-
 
 nav ul li {
   display: inline;
@@ -65,14 +63,13 @@ fieldset {
   padding: 20px;
   background-color: #93c6f5;
 }
- 
-p{
-  color:var(--color-blanco)
+
+p {
+  color: var(--color-blanco);
 }
 legend {
   font-weight: bold;
 }
-
 
 .img-container-header {
   display: flex;
@@ -81,7 +78,7 @@ legend {
 }
 
 .img-container-header img {
-  width: 40vw; 
+  width: 40vw;
   max-width: 100%;
   height: auto;
 }
@@ -96,11 +93,11 @@ legend {
   width: calc(55% - 30px);
   max-width: 100%;
   height: auto;
-  margin-right: 2rem; 
+  margin-right: 2rem;
 }
 
 footer {
- background: linear-gradient(
+  background: linear-gradient(
     to bottom,
     rgba(111, 179, 243, 0.5),
     rgba(255, 255, 255, 0.5),
@@ -110,7 +107,6 @@ footer {
   padding: 10px;
   text-align: center;
 }
-
 
 h1 {
   font-size: 2rem;
@@ -131,8 +127,8 @@ h3 {
   margin-top: 4rem;
   margin-bottom: 2rem;
 }
-h6{
-  color:var(--color-blanco) ;
+h6 {
+  color: var(--color-blanco);
 }
 
 img {
@@ -177,7 +173,7 @@ img {
   h3 {
     font-size: 0.7rem;
   }
-  p{
+  p {
     font-size: 0.6rem;
   }
 }
