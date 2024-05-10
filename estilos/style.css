@@ -13,10 +13,9 @@ li {
 
 :root {
   --color-azul: #93c6f5;
-  --color-blanco: #ffffff; 
-  --color-amarillo: #f4d941; 
+  --color-blanco: #ffffff;
+  --color-amarillo: #f4d941;
 }
-
 
 body {
   font-family: Arial, sans-serif;
@@ -36,7 +35,6 @@ nav ul {
   list-style: none;
 }
 
-
 nav ul li {
   display: inline;
   margin-right: 20px;
@@ -45,7 +43,7 @@ nav ul li {
 nav ul li a {
   color: var(--color-amarillo);
   text-decoration: none;
-  size: 1rem;
+  size: 2rem;
 }
 
 main {
@@ -61,15 +59,17 @@ h3 {
 fieldset {
   margin: 2rem;
   margin-top: 1rem;
-  border: 3px solid var(--color-amarillo);
+  border: 2px solid var(--color-amarillo);
   padding: 20px;
   background-color: #93c6f5;
 }
 
+p {
+  color: var(--color-blanco);
+}
 legend {
   font-weight: bold;
 }
-
 
 .img-container-header {
   display: flex;
@@ -78,7 +78,7 @@ legend {
 }
 
 .img-container-header img {
-  width: 40vw; 
+  width: 40vw;
   max-width: 100%;
   height: auto;
 }
@@ -93,11 +93,11 @@ legend {
   width: calc(55% - 30px);
   max-width: 100%;
   height: auto;
-  margin-right: 2rem; 
+  margin-right: 2rem;
 }
 
 footer {
- background: linear-gradient(
+  background: linear-gradient(
     to bottom,
     rgba(111, 179, 243, 0.5),
     rgba(255, 255, 255, 0.5),
@@ -107,7 +107,6 @@ footer {
   padding: 10px;
   text-align: center;
 }
-
 
 h1 {
   font-size: 2rem;
@@ -127,6 +126,9 @@ h3 {
   text-align: center;
   margin-top: 4rem;
   margin-bottom: 2rem;
+}
+h6 {
+  color: var(--color-blanco);
 }
 
 img {
@@ -171,7 +173,7 @@ img {
   h3 {
     font-size: 0.7rem;
   }
-  p{
+  p {
     font-size: 0.6rem;
   }
 }
