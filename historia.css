@@ -11,3 +11,15 @@ body{
 font-family:Georgia, 'Times New Roman', Times, serif;
 font-size: 19px;
 }
+.copyright{
+    color: gold;
+}
+a{
+    font-size: 19px;
+}
+h1{
+    font-size: 35px;
+    color:azure;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: italic;
+}
