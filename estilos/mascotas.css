@@ -1,0 +1,142 @@
+html,
+body,
+header,
+nav,
+main,
+footer,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --color-azul: #93c6f5;
+  --color-blanco: #ffffff;
+  --color-amarillo: #f4d941;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: var(--color-azul);
+}
+
+header {
+  background-color: var(--color-azul);
+  color: var(--color-blanco);
+  padding: 20px;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  color: var(--color-amarillo);
+  text-decoration: none;
+  size: 2rem;
+}
+
+main {
+  padding: 20px;
+  background-color: #93c6f5;
+}
+
+h1,
+h2,
+h3 {
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+p {
+    color: black !important;
+    text-align: center;
+    font-size: large;
+  }
+
+fieldset {
+  margin: 2rem;
+  margin-top: 1rem;
+  border: 2px solid var(--color-amarillo);
+  padding: 20px;
+  background-color: #93c6f5;
+}
+
+fieldset .galeria .videos{
+    margin: 3rem;
+    align-content: center;
+}
+
+.img-container-header {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 3rem;
+  margin-top: 3rem;
+}
+
+.img-container-header img {
+  width: 40vw;
+  max-width: 100%;
+  height: auto;
+}
+
+.img-container-mundiales {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 3rem;
+  margin-top: 3rem;
+
+  width: calc(55% - 30px);
+  max-width: 100%;
+  height: 300px;
+  margin-right: 2rem;
+  margin-top: 3rem;
+}
+
+.img-container-mundiales img {
+    /*width: 40vw;*/
+    max-width: 100%;
+    height:auto ;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+  }
+/*.img-container-mundiales {
+  width: calc(55% - 30px);
+  max-width: 100%;
+  height: auto;
+  margin-right: 2rem;
+}*/
+
+.mascota{
+    display:inline-block;
+    justify-content: center;
+    margin: 3rem;
+}
+
+h1,
+h2,
+h3,h4 {
+  margin-bottom: 10px;
+  margin: auto;
+}
+
+footer {
+    background: linear-gradient(
+      to bottom,
+      rgba(111, 179, 243, 0.5),
+      rgba(255, 255, 255, 0.5),
+      rgba(111, 179, 243, 0.5)
+    );
+    color: var(--color-amarillo);
+    padding: 10px;
+    text-align: center;
+  }
