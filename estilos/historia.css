@@ -38,6 +38,7 @@ body{
     border-radius: 20px;
     border: 1px solid #ddd;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
   }
 .container-historia, h1{
 font-family:Georgia, 'Times New Roman', Times, serif;
