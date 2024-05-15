@@ -36,7 +36,7 @@ h2 {
 
 p {
   font-size: 1.1rem;
-  padding: rem;
+  padding: 1.1 rem;
   border-radius: 1.5rem;
   margin: 1.5rem;
   text-wrap: pretty;
@@ -57,7 +57,7 @@ img {
 
 
 footer, header {
-  padding: 10px;
+  padding: 30 px;
   text-align: center;
   color: var(--color-azul);
   background: linear-gradient(
@@ -67,7 +67,9 @@ footer, header {
     rgba(111, 179, 243, 0.5));
 }
 
-
+.footer .copyright {
+  font-size: 12px;
+}
 
 
 
