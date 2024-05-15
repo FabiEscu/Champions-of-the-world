@@ -96,18 +96,6 @@ legend {
   margin-right: 2rem;
 }
 
-footer {
-  background: linear-gradient(
-    to bottom,
-    rgba(111, 179, 243, 0.5),
-    rgba(255, 255, 255, 0.5),
-    rgba(111, 179, 243, 0.5)
-  );
-  color: var(--color-amarillo);
-  padding: 10px;
-  text-align: center;
-}
-
 h1 {
   font-size: 2rem;
   text-align: center;
@@ -134,10 +122,6 @@ h6 {
 img {
   max-width: 100%;
   height: auto;
-}
-
-.footer .copyright {
-  font-size: 12px;
 }
 
 /*Celulares*/
@@ -208,4 +192,22 @@ img {
   main {
     padding: 20px;
   }
+}
+
+
+footer {
+  background: linear-gradient(
+    to bottom,
+    rgba(111, 179, 243, 0.5),
+    rgba(255, 255, 255, 0.5),
+    rgba(111, 179, 243, 0.5)
+  );
+  color: var(--color-amarillo);
+  padding: 10px;
+  text-align: center;
+}
+
+.copyright {
+  font-size: 12px;
+  color: black;
 }
