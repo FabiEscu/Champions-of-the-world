@@ -1,53 +1,119 @@
-:root {
-  --color-celeste: #93c6f5;
-  --color-blanco: #ffffff;
-  --color-azul: darkblue
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-nav ul li {
-  justify-content: center;
-  display: inline;
-  margin: 20px;
+nav {
+  margin: auto;
+  position:static;
+  padding-left: 100px;
+  padding-right: 100px;
 }
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin-right: 20px;
+  }
+  
+  nav ul li a {
+    display: flex;
+    justify-content: center;
+    color: black;
+    text-decoration: none;
+    size: 2rem;
+  }
+
+  header {
+    background-color: #00c8ff9e;
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+  }
+  
+  header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  
+  header nav li {
+    margin-right: 20px;
+  }
+  
+  header nav a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  header nav a:hover {
+    font-weight: bold;
+    color: #2200ff;
+    padding: 10px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px #ffffff;
+  }
+  
+  main {
+    background-image: url(https://cdn.pixabay.com/photo/2016/06/16/01/20/argentina-1460299_1280.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2em;
+  }
 
 body {
   font-family: Arial, sans-serif;
-  line-height: 1.6;
-  background-color: var(--color-celeste);
+    line-height: 1.6;
+    color: #333;
+    background-color: #00c8ff9e;
 }
 
 .container {
-  max-width: 800px;
+
   margin: auto;
-  padding: 20px;
-  background-image: url(https://i.pinimg.com/564x/8d/41/70/8d4170a98f8c50f306d2c2d35e9293fb.jpg);
-  background-repeat: no-repeat;
   background-size: cover;
-  box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
-  border-radius: 8px;
+  background-color: #ffffffb8;
+    padding: 2em;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+}
+
+.container h2, h3 {
+  font-size: 18px;
+    margin-top: 5px;
+    color: #000000;
 }
 
 h1 {
-  color: darkblue;
+  color: rgb(0, 0, 0);
   text-align: center;
   font-size: 1.8rem;
+  font-weight: bolder;
 }
 
 h2,h3 {
-  color:white;
+  color:rgb(0, 0, 0);
   text-align: center;
 }
 
 h3 {
   font-size: 1.4rem;
-}
-
-p {
-  text-align: center;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-  color: var(--color-azul)
-  font-size: large;
 }
 
 form {
@@ -60,7 +126,7 @@ label {
   margin-bottom: 20px;
   color: white;
   font-size: large;
-  text-shadow : 0px 0px 20px black;
+  text-shadow : 0px 0px 10px rgba(0, 0, 0, 0.533);
 }
 
 input {
@@ -68,60 +134,25 @@ input {
   margin-bottom: 15px;
   width: 70%;
   box-sizing: border-box;
-  backdrop-filter: blur(15px);
-  background-color: rgba(255,255,255,0.5);
+  background-color: rgba(75, 75, 75, 0.5);
   border-radius: 4px;
   border-color: rgba(0, 0, 0, 0);
   outline: none;
+  font-weight: bolder;
 }
 
 textarea {
-  backdrop-filter: blur(15px);
+ 
   background-color: rgba(255,255,255,0.5);
   border-radius: 10px;
   outline: none;
   padding: 10px;
 }
 
-footer, header {
-  padding: 10px;
+footer {
+  background-color: #00c8ff9e;
+  color: #000000;
+  padding: 1em;
   text-align: center;
-  color: var(--color-azul);
-  background: linear-gradient(
-    to bottom,
-    rgba(111, 179, 243, 0.5),
-    rgba(255, 255, 255, 0.5),
-    rgba(111, 179, 243, 0.5));
-}
-
-.footer .copyright {
-  font-size: 12px;
-}
-/*pantallas de celulares */
-@media only screen and (max-width: 767px) {
-  .container {
-    max-width: 100%;
-    padding: 10px;
-  }
-}
-
-/* Estilos para tablets */
-@media only screen and (min-width: 768px) and (max-width: 1023px) {
-  .container {
-    max-width: 600px;
-  }
-}
-
-/* Estilos para notebooks */
-@media only screen and (min-width: 1024px) and (max-width: 1439px) {
-  .container {
-    max-width: 800px;
-  }
-}
-
-/* Estilos para monitores de PC */
-@media only screen and (min-width: 1440px) {
-  .container {
-    max-width: 1000px;
-  }
+  clear: both;
 }

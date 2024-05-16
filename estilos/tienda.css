@@ -1,4 +1,9 @@
 /* Global styles */
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 nav {
   margin: auto;
@@ -31,6 +36,7 @@ nav ul {
     margin: 0;
     padding: 0;
   }
+
   h1, p{
     text-align: center;
   }
@@ -74,7 +80,6 @@ nav ul {
     padding-top: 5px;
     border-radius: 10px;
     box-shadow: 5px 5px 5px #ffffff;
-
   }
   
   main {

@@ -11,60 +11,64 @@
 
 <body>
     <header>
-      <nav>
-        <ul>
-          <li><a href="index.html">Inicio</a></li>
-          <li><a href="historia.html">Historia</a></li>
-          <li><a href="galeria.html">Galería</a></li>
-          <li><a href="mascotas.html">Mascotas Mundiales</a></li>
-          <li><a href="tienda.html">Tienda</a></li>
-          <li><a href="contacto.html">Contacto</a></li>
-        </ul>
-      </nav>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="historia.html">Historia</a></li>
+                <li><a href="galeria.html">Galería</a></li>
+                <li><a href="mascotas.html">Mascotas Mundiales</a></li>
+                <li><a href="tienda.html">Tienda</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
     </header>
 
     <main>
-    
-    <h1>Contacto</h1>
-   
-    <fieldset class="container">
-        <h2><leyend> Datos Personales</legend></h2>
-        <br>
-        <form action="https://formsubmit.co/fabiescu2404@gmail.com" method="POST">
-            <label for="nombre">
-                <h3>Nombre:</h3>
-            </label>
-            <input type="text" id="nombre" required /><br /><br />
 
-            <label for="apellido">
-                <h3>Apellido:</h3>
-            </label>
-            <input type="text" id="apellido" required /><br /><br />
+        <h1>Contacto</h1>
 
-            <label for="fecha-nacimiento">
-                <h3>Fecha de nacimiento:</h3>
-            </label>
-            <input type="text" id="dni" required /><br /><br />
+        <fieldset class="container">
+            <h2>
+                <leyend> Datos Personales</legend>
+            </h2>
+            <br>
+            <form action="https://formsubmit.co/fabiescu2404@gmail.com" method="POST">
+                <label for="nombre">
+                    <h3>Nombre:</h3>
+                </label>
+                <input type="text" id="nombre" required /><br />
 
-            <label for="email">
-                <h3>Email:</h3>
-            </label>        
-            <input type="email" id="email" required /><br /><br />
+                <label for="apellido">
+                    <h3>Apellido:</h3>
+                </label>
+                <input type="text" id="apellido" required /><br />
 
-            <label for="text">
-                <h3>Ingrese el mensaje a Enviar:</h3>
-            </label>
-            <textarea name="detalle-mensaje" id="" cols="40" rows="10" placeholder="Dejanos tu mensaje alentador..."></textarea>
-            <br><br>
-            <input type="submit" value="Enviar">
-        </form>
+                <label for="fecha-nacimiento">
+                    <h3>Fecha de nacimiento:</h3>
+                </label>
+                <input type="text" id="fecha-nacimiento" required /><br />
 
-    </fieldset>
+                <label for="email">
+                    <h3>Email:</h3>
+                </label>
+                <input type="email" id="email" required /><br />
+
+                <label for="text">
+                    <h3>Ingrese el mensaje a Enviar:</h3>
+                </label>
+                <textarea name="detalle-mensaje" id="" cols="40" rows="10"
+                    placeholder="Dejanos tu mensaje alentador..."></textarea>
+                <br><br>
+                <input type="submit" value="Enviar">
+            </form>
+
+        </fieldset>
+    </main>
 
 
     <footer>
         <p class="copyright">&copy Curso Diseño web Tecno3F - Grupo 4 - 2024</p>
-      </footer>
+    </footer>
 </body>
 
 </html>

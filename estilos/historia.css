@@ -1,49 +1,107 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 nav {
-    margin: auto;
-    position:static;
-    padding-bottom: 50px;
+  margin: auto;
+  position:static;
+  padding-left: 100px;
+  padding-right: 100px;
   }
   
-  nav ul {
-      display: flex;
-      justify-content: center;
-      list-style: none;
-    }
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  }
     
-    nav ul li {
-      display: inline;
-      margin-right: 20px;
-    }
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+  }
     
-    nav ul li a {
-      display: flex;
-      justify-content: center;
-      color: black;
-      text-decoration: none;
-      size: 2rem;
-    }
+nav ul li a {
+  display: flex;
+  justify-content: center;
+  color: black;
+  text-decoration: none;
+  size: 2rem;
+  }
 
-body{
-    background-image:url(https://i.pinimg.com/736x/a5/37/05/a53705b9a77b24e5b04b99e06b737a60.jpg);
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #00c8ff9e;
+  }
+
+header {
+  background-color: #00c8ff9e;
+  color: #fff;
+  padding: 1em;
+  text-align: center;
+  }
+
+header nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-evenly;
+  }
+  
+header nav li {
+  margin-right: 20px;
+  }
+  
+header nav a {
+  color: #fff;
+  text-decoration: none;
+  }
+
+ header nav a:hover {
+  font-weight: bold;
+  color: #2200ff;
+  padding: 10px;
+  padding-bottom: 5px;
+  padding-top: 5px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px #ffffff;
+  }
+
+main {
+  background-image: url(https://cdn.pixabay.com/photo/2016/06/16/01/20/argentina-1460299_1280.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    background-position: center;
-    margin:20px;
-    padding:20px;
-}
-.descripcion {
-    background-color: #ffffff3a;
+    background-position:inherit;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     padding: 2em;
-    border-radius: 20px;
-    border: 1px solid #ddd;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(10px);
-  }
-.container-historia, h1{
-font-family:Georgia, 'Times New Roman', Times, serif;
-font-size: 19px;
-color: #000000;
-font: bold;
+}
 
+.descripcion {
+  background-color: #ffffffa0;
+  padding: 2em;
+  border-radius: 20px;
+  border: 1px solid #ddd;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+.container-historia, h1{
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  font-size: 19px;
+  color: #000000;
+  font: bold;
+  }
+
+footer {
+  background-color: #00c8ff9e;
+  color: #000000;
+  padding: 1em;
+  text-align: center;
+  clear: both;
 }

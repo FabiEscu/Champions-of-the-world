@@ -1,25 +1,89 @@
-:root {
-    --color-celeste: #93c6f5;
-    --color-blanco: #ffffff;
-    --color-azul: darkblue
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-ul {
+nav {
+  margin: auto;
+  position:static;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+nav ul {
     display: flex;
     justify-content: center;
-}
+    list-style: none;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin-right: 20px;
+  }
+  
+  nav ul li a {
+    display: flex;
+    justify-content: center;
+    color: black;
+    text-decoration: none;
+    size: 2rem;
+  }
 
-body {
-  font-family: Arial, sans-serif;
-  line-height: 1.6;
-  background-color: var(--color-celeste);
-}
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #00c8ff9e;
+  }
 
+  header {
+    background-color: #00c8ff9e;
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+  }
+  
+  header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  
+  header nav li {
+    margin-right: 20px;
+  }
+  
+  header nav a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  header nav a:hover {
+    font-weight: bold;
+    color: #2200ff;
+    padding: 10px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px #ffffff;
+  }
 
-h1,
-h2,
-p, 
-div {
+  main {
+    background-image: url(https://cdn.pixabay.com/photo/2016/06/16/01/20/argentina-1460299_1280.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2em;
+  }
+
+h2, p, div {
     text-align: center;
     margin-top: 2rem;
     margin-bottom: 2rem;
@@ -28,6 +92,8 @@ div {
 
 h1 {
     font-size: 1.8rem;
+    font-weight: bolder;
+    color: #000;
 }
 
 h2 {
@@ -42,94 +108,29 @@ p {
   text-wrap: pretty;
 }
 
-
-
 img {
     max-width: 90%;
     height: auto;
+    border-radius: 10px;
 }
 
 .galeria {
     justify-content: center;
     margin-bottom: 3rem;
+    background-color: #ffffffb8;
+    padding: 2em;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
 }
 
-
-
-footer, header {
-  padding: 30 px;
+footer {
+  background-color: #00c8ff9e;
+  color: #000000;
+  padding: 1em;
   text-align: center;
-  color: var(--color-azul);
-  background: linear-gradient(
-    to bottom,
-    rgba(111, 179, 243, 0.5),
-    rgba(255, 255, 255, 0.5),
-    rgba(111, 179, 243, 0.5));
-}
-
-.footer .copyright {
-  font-size: 12px;
+  clear: both;
 }
 
 
 
-
-/*Celulares*/
-@media (max-width: 600px) {
-  header {
-    padding: 10px;
-  }
-
-  nav ul li {
-    display: block;
-    margin: 10px 0;
-  }
-
-  main {
-    padding: 10px;
-  }
-
-  h1 {
-    font-size: 1rem;
-  }
-
-  h2 {
-    font-size: 0.9rem;
-  }
-
-  p {
-    font-size: 0.6rem;
-  }
-}
-
-/*Tablets*/
-@media (min-width: 601px) and (max-width: 1024px) {
-  header {
-    padding: 15px;
-  }
-
-  nav ul li {
-    display: inline;
-    margin: 0 10px;
-  }
-
-  main {
-    padding: 15px;
-  }
-}
-
-/*Notebooks y pantallas más grandes*/
-@media (min-width: 1025px) {
-  header {
-    padding: 20px;
-  }
-
-  nav ul li {
-    display: inline;
-    margin: 0 20px;
-  }
-
-  main {
-    padding: 20px;
-  }
-}
